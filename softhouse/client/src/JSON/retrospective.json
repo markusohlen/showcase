@@ -1,0 +1,168 @@
+{
+  "mainInformation": {
+    "title": "Retrospective",
+    "description": "Nicely played. You have now reached the retrospective. This means you get to invest some story points. Choose what you think will benefit you, the process and the company the most. It's okay not to choose any option."
+  },
+  "retrospectives": {
+    "level1": [
+      {
+        "strategy": "Have a coffee to increase the productivity of your colleagues",
+        "cost": 100,
+        "consequences": [
+          {
+            "velocity": -15,
+            "consequence": "Oh no, you spilled the coffee all over the table. Three computers were destroyed!"
+          },
+          {
+            "velocity": 5,
+            "consequence": "The coffee was very much appreciated by your colleagues. You are working really well now!"
+          },
+          {
+            "velocity": -5,
+            "consequence": "Typically, the coffee was way too old. Productivity is declining due to stomach ailments."
+          },
+          {
+            "velocity": 15,
+            "consequence": "The coffee was a success. It was a long time since you worked so well. The atmosphere is great."
+          }
+        ]
+      },
+      {
+        "strategy": "Organize an after-work tennis tournament",
+        "cost": 50,
+        "consequences": [
+          {
+            "velocity": -10,
+            "consequence": "Typically, the weather is too bad to play. Disappointment lowers colleagues' productivity."
+          },
+          {
+            "velocity": 5,
+            "consequence": "What a great idea! The tennis tournament was a hit! The atmosphere is really good at work."
+          },
+          {
+            "velocity": 10,
+            "consequence": "You got to know each other better through the activity. The collaboration has never been better!"
+          },
+          {
+            "velocity": -5,
+            "consequence": "Too bad, the tennis tournament did not seem to be a hit. Maybe you should try another activity next time."
+          }
+        ]
+      },
+      {
+        "strategy": "Increase communication with the customer",
+        "cost": 100,
+        "consequences": [
+          {
+            "velocity": 10,
+            "consequence": "Really good idea! You found out a lot of things you did not know before. Now you can develop a better product!"
+          },
+          {
+            "velocity": 5,
+            "consequence": "What a great idea! The relationship between you and the customer feels better than ever."
+          },
+          {
+            "velocity": 15,
+            "consequence": "You have created a really good relationship with the customer. The customer would like to hire you for more assignments."
+          },
+          {
+            "velocity": -5,
+            "consequence": "Good try! However, the customer does not have time to talk more than you already do."
+          }
+        ]
+      }
+    ],
+    "level2": [
+      {
+        "strategy": "Cancel the daily standups",
+        "cost": 100,
+        "consequences": [
+          {
+            "velocity": -20,
+            "consequence": "Oh no, since the canceling of the daily standups there has been a lot of confusion."
+          },
+          {
+            "velocity": -15,
+            "consequence": "Unfortunately, it was not a good decision. There has been a lot of duplication of work due to the reduced communication."
+          },
+          {
+            "velocity": -25,
+            "consequence": "Your suggestion was not appreciated by the manager. Communication is important for the agile process to work."
+          },
+          {
+            "velocity": 10,
+            "consequence": "Luckily no one heard your suggestion! The outcome had not benefited the company."
+          }
+        ]
+      },
+      {
+        "strategy": "Invest in a Scrum Board",
+        "cost": 150,
+        "consequences": [
+          {
+            "velocity": 10,
+            "consequence": "Yes, that is a great idea! The staff feel that they have a good overview of the project."
+          },
+          {
+            "velocity": -15,
+            "consequence": "Good idea! However, The Schrum board has been hidden since you bought it. It is important that it is visible."
+          },
+          {
+            "velocity": 10,
+            "consequence": "What a great idea! Everyone knows what to do!"
+          },
+          {
+            "velocity": -10,
+            "consequence": "Good idea! Unfortunately, all post-it notes have fallen off the board. Some information has disappeared!"
+          }
+        ]
+      },
+      {
+        "strategy": "Produca a burndown chart",
+        "cost": 200,
+        "consequences": [
+          {
+            "velocity": 10,
+            "consequence": "Good idea! The burn down chart enabled the completion of the project before the deadline!"
+          },
+          {
+            "velocity": 5,
+            "consequence": "Good idea! It is now easy for the staff to see what tasks need to be performed."
+          },
+          {
+            "velocity": 15,
+            "consequence": "Really good idea. Unfortunately, the burndown chart has not been updated according to additional changes. It has therefore become misleading."
+          },
+          {
+            "velocity": -10,
+            "consequence": "To bad! The burndown chart has disappeared."
+          }
+        ]
+      }
+    ],
+    "level3": [
+      {
+        "strategy": "Try to convince the boss that you should abandon the agile working method",
+        "cost": 75,
+        "consequences": [
+          {
+            "velocity": -20,
+            "consequence": "The boss was not so fond of your idea. Better luck next time!"
+          },
+          {
+            "velocity": -15,
+            "consequence": "The boss agreed to test your proposal. However, the outcome was not so positive as you found it difficult to handle additional requirements."
+          },
+          {
+            "velocity": -25,
+            "consequence": "Unfortunately, that was not a good idea. Better luck next time!"
+          },
+          {
+            "velocity": 10,
+            "consequence": "No good idea! Luckily the boss was busy with something else!"
+          }
+        ]
+      }
+    ]
+  }
+}

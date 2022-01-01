@@ -1,0 +1,243 @@
+[
+  {
+    "category": "daily-stand-up-card",
+    "title": "Daily StandUp",
+    "question": "Oh no, the project leader was late to the meeting again! What do you do?",
+    "alternatives": [
+      {
+        "answer": "Nothing, we can wait! We've got all time in the world.",
+        "correct": false,
+        "velocity": -3,
+        "consequence": "Well, something should be done. This behaviour can't continue."
+      },
+      {
+        "answer": "The person who is late for a meeting has to pay 1$, which is shared by the team.",
+        "correct": true,
+        "velocity": 3,
+        "consequence": "That's a great idea! This will encourage the staff to keep comming in time."
+      },
+      {
+        "answer": "There has to be some consequences. The project leader has to bake cookies to the next meeting.",
+        "correct": true,
+        "velocity": 2,
+        "consequence": "Thats a wise decision! Very wise indeed!"
+      }
+    ]
+  },
+  {
+    "category": "daily-stand-up-card",
+    "title": "Daily StandUp",
+    "information": "It was decided that another senior developer will be added to the team.",
+    "consequence": "The work phase gets a little faster. You gain 5 velocity points.",
+    "velocity": 5
+  },
+  {
+    "category": "daily-stand-up-card",
+    "title": "Daily StandUp",
+    "information": "Today on the standUp a member of your team said this was his last day!",
+    "consequence": "The work phase gets a little slowe. You loose 5 velocity points.",
+    "velocity": -5
+  },
+  {
+    "category": "customer-card",
+    "title": "Customer",
+    "question": "A client contacts you regarding a change in the product you are developing. The customer wants the product to also support the German language. Where do you place the new requirement?",
+    "alternatives": [
+      {
+        "answer": "Product backlog",
+        "correct": true,
+        "velocity": 2,
+        "consequence": "That is correct! You gain 2 velocity points. "
+      },
+      {
+        "answer": "In the burndown chart",
+        "correct": false,
+        "velocity": -3,
+        "consequence": "Oh no, you put the requirement in the wrong place and confused your team members. You loose 3 velocity points."
+      },
+      {
+        "answer": "In the daily standup",
+        "correct": false,
+        "velocity": -2,
+        "consequence": "Oh no, you put the requirement in the wrong place and confused your team members. You loose 2 velocity points."
+      }
+    ]
+  },
+  {
+    "category": "customer-card",
+    "title": "Customer",
+    "question": "The customer wonders if you can add a short function two weeks before the hand over. It is critical, she says! What do you do?",
+    "alternatives": [
+      {
+        "answer": "Of course, we can handle that! We probably need to change the order of priority in the sprint backlog.",
+        "correct": true,
+        "velocity": 5,
+        "consequence": "Well spoken! Good that you mention that the priorities change. You gain 5 velocity points!"
+      },
+      {
+        "answer": "Sorry, that's not possible. We have enough to do!",
+        "correct": false,
+        "velocity": -4,
+        "consequence": "That was not a good answer. You need to make sure the customer is satisfied. You loose 4 velocity points."
+      },
+      {
+        "answer": "Forget it! It will be as planned. We work according to the waterfall model.",
+        "correct": false,
+        "velocity": -7,
+        "consequence": "That answer was not appreciated by the customer. You loose 7 velocity points!"
+      }
+    ]
+  },
+  {
+    "category": "customer-card",
+    "title": "Customer",
+    "information": "The customer emails you to say that the appointment you had to discuss requirement priorities needs to be canceled.",
+    "consequence": "This results in that your team spends one week implementing the wrong requirements. The work phase gets a little slower. You loose 4 velocity points.",
+    "velocity": -4
+  },
+  {
+    "category": "customer-card",
+    "title": "Customer",
+    "information": "The customer emails you and says that a requirement can be removed from the backlog.",
+    "consequence": "The work phase gets a little faster. You gain 4 velocity points.",
+    "velocity": 4
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal day",
+    "information": "It's a normal day at the office. Nothing special to notice. Have a great day!",
+    "funFact": "Did you know that Softhouse was founded in 1996 in Malmö and has since grown to 7 offices around Sweden?"
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal day",
+    "information": "It's a normal day. Keep on playing.",
+    "funFact": "Did you know that Softhouse was founded in 1996 in Malmö and has since grown to 7 offices around Sweden?"
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal Day",
+    "information": "It's a normal day at the office. Nothing special to notice. Have a great day!",
+    "funFact": "Did you know that Sofhouse has an office in Sarajevo?"
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal Day",
+    "information": "It's a calm day at the office. Keep rolling the dice!",
+    "funFact": "Did you know that Sofhouse offers over 25.000 courses?"
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal Day",
+    "question": "En fråga om scrum och med alternativ",
+    "alternatives": [
+      {
+        "answer": "RÄTT SVAR",
+        "correct": true,
+        "points": 10,
+        "consequence": "Correct! Your earn 10 points to your highscore."
+      },
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      },
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      }
+    ]
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal Day",
+    "question": "En till fråga om scrum och med alternativ",
+    "alternatives": [
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      },
+      {
+        "answer": "RÄTT SVAR",
+        "correct": true,
+        "points": 10,
+        "consequence": "Correct! Your earn 10 points to your highscore."
+      },
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      }
+    ]
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal Day",
+    "question": "En till fråga om scrum och med alternativ",
+    "alternatives": [
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      },
+      {
+        "answer": "RÄTT SVAR",
+        "correct": true,
+        "points": 10,
+        "consequence": "Correct! Your earn 10 points to your highscore."
+      },
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      }
+    ]
+  },
+  {
+    "category": "normal-day-card",
+    "title": "Normal Day",
+    "question": "En till fråga om scrum och med alternativ",
+    "alternatives": [
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      },
+      {
+        "answer": "RÄTT SVAR",
+        "correct": true,
+        "points": 10,
+        "consequence": "Correct! Your earn 10 points to your highscore."
+      },
+      {
+        "answer": "FEL SVAR",
+        "correct": false,
+        "points": 0,
+        "consequence": "Wrong answer. No points where added to your highscore."
+      }
+    ]
+  },
+  {
+    "category": "day-of-illness-card",
+    "title": "Day of illness",
+    "information": "Oh no, you've caught a cold. You therefore stay at home to rest. Today your colleagues therefore have a little extra to do.",
+    "consequence": "The work phase gets a little slower. You loose 3 velocity points.",
+    "velocity": -3
+  },
+  {
+    "category": "day-of-illness-card",
+    "title": "Day of illness",
+    "information": "Two of your team members called in sick today.",
+    "consequence": "The work phase gets a little slower. You loose 4 velocity points.",
+    "velocity": -4
+  }
+]

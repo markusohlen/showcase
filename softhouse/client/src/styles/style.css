@@ -1,0 +1,83 @@
+@import url("https://use.typekit.net/dmf3xst.css");
+
+/* Variables */
+:root {
+  --primary-color: #37506a;
+  --secondary-color: #dc823d;
+}
+
+/* Global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: futura-pt, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+/* Dice CSS */
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 33vh;
+  transform: translateX(-50%);
+  height: 8rem;
+  border: solid 3px var(--primary-color);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.dice:hover {
+  transform: translate(-50%) scale(1.1);
+  -webkit-box-shadow: -2px -1px 24px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -1px 24px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -1px 24px -6px rgba(0, 0, 0, 0.75);
+}
+/*TODO: flytta media query till respektive style komonent*/
+/* För hamburgarmenyn */
+@media screen and (max-width: 1600px) {
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    min-height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change.line1 {
+    -webkit-transform: rotate(-50deg) translate(-8.5px, 4px);
+    transform: rotate(-50deg) translate(-8.5px, 4px);
+  }
+
+  .change.line2 {
+    opacity: 0;
+  }
+
+  .change.line3 {
+    -webkit-transform: rotate(50deg) translate(-8.5px, -4px);
+    transform: rotate(50deg) translate(-8.5px, -4px);
+  }
+
+  .tiles-container {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+  }
+}

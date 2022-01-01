@@ -1,0 +1,20 @@
+/* Rules CSS */
+
+.rules-container {
+  padding: 0 6% 0 6%;
+  font-size: large;
+  background-color: var(--primary-color);
+  height: 100%;
+  color: white;
+  overflow: auto;
+}
+
+.rules-container > * {
+  margin: 5% 0;
+}
+
+.rules-list {
+  margin-left: 10px;
+}
+
+/* Rules CSS  ends*/

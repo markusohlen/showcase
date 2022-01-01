@@ -1,0 +1,177 @@
+.retrospective-layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.retrospective-layer h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.retrospective-layer p {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.retrospective-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.retrospective-form label {
+  align-self: flex-start;
+  color: white;
+  font-size: 1.3em;
+}
+
+.retrospective-form .form-button-retrospective {
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.retrospective-form .form-button-retrospective:hover {
+  background-color: rgba(256, 256, 256, 0.2);
+}
+
+.retrospective-frame {
+  width: 50%;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*TILLÄGG*/
+
+/*TILLÄGG*/
+
+.retrospective-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.retrospective-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-retrospective-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.retrospective-checkbox-container:hover
+  input
+  ~ .checkmark-retrospective-custom {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.retrospective-checkbox-container
+  input:checked
+  ~ .checkmark-retrospective-custom {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-retrospective-custom:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.retrospective-checkbox-container
+  input:checked
+  ~ .checkmark-retrospective-custom:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.retrospective-checkbox-container .checkmark-retrospective-custom:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--primary-color);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close-wrapper-retrospective {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.close-wrapper-retrospective .close-line1 {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.close-wrapper-retrospective .close-line2 {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.close-wrapper-retrospective:hover .close-line1,
+.close-wrapper-retrospective:hover .close-line2 {
+  transform: rotate(-360deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}

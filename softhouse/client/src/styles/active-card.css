@@ -1,0 +1,133 @@
+.card-label-container {
+  font-size: 1em;
+  color: white;
+  padding-left: 25px;
+}
+
+.card-label-container {
+  position: relative;
+}
+
+.card-label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.alt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.card-label-container input:checked ~ .alt:after {
+  background-color: var(--secondary-color);
+}
+
+.alt:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.card-label-container input:checked ~ .alt:after {
+  display: block;
+}
+
+.card-label-container .alt:after {
+  top: 3.5px;
+  left: 3.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.card-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.active-card-question {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.fun-fact {
+  color: white;
+  font-size: 1em;
+}
+
+.card-label-container {
+  font-size: 1em;
+}
+
+.btn {
+  color: white;
+  background-color: var(--secondary-color);
+  width: 100px;
+  padding: 5px;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: white;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.card {
+  min-height: 35vh;
+  background: var(--secondary-color);
+  width: 90%;
+  /* overflow-y: auto; */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-highlight {
+  min-height: 35vh;
+  background-color: #eda369;
+  /* overflow-y: auto; */
+  width: 95%;
+  /* padding: 10px; */
+}
+
+.fun-fact-wrapper .icon-fun-fact {
+  width: 10%;
+  float: left;
+}
+
+.fun-fact-wrapper .text-fun-fact {
+  width: 90%;
+  float: left;
+}
+
+.fun-fact-wrapper .icon-fun-fact img {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}

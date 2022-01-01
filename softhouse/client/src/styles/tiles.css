@@ -1,0 +1,46 @@
+/* Tiles CSS */
+.tiles-container {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  user-select: none;
+}
+
+.tile-color-white {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+
+.tile-color-blue {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.tile-color-orange {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.tile-color-red {
+  background-color: red;
+  color: white;
+}
+
+/* .tiles-container:nth-child(2n + 2) {
+  color: var(--primary-color);
+  background-color: #fff;
+  border: 3px solid var(--primary-color);
+}
+
+.tiles-container:nth-child(3n + 3) {
+  background-color: var(--primary-color);
+  color: #fff;
+} */

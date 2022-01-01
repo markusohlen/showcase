@@ -1,0 +1,80 @@
+/* Gameboard CSS */
+.gameboard-container {
+  height: 100vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameboard {
+  height: 95vh;
+  width: 90%;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.column-flex {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+}
+
+.row-div-tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.column-div-tiles1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.column-div-tiles2 {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+}
+
+.endscreen {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.endscreen > * {
+  margin: 20px;
+  color: var(--primary-color);
+  user-select: none;
+}
+
+.endscreen a {
+  border-radius: 10px;
+  border: 3px solid var(--secondary-color);
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 2em;
+  padding: 10px;
+  transition: all ease-in 300ms;
+  text-decoration: none;
+}
+
+.endscreen a:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transition: all ease-in 300ms;
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}

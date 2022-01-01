@@ -1,0 +1,93 @@
+<div class="issues">
+    <div class="container-fluid" id="issues">
+        <h1>Issues</h1>
+
+        {{#each issues}}
+        <div class="issue issueNumber{{issueNumber}}">
+            <div class="row">
+                <div class="col-3">
+                    <h3>{{title}}</h3>
+                </div>
+                <div class="col-1">
+                    <img src="{{avatar}}" alt="" class="avatarImage">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <p>{{body}}</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-6">
+                    <p>State: {{state}}</p>
+                </div>
+                <div class="col-6">
+                    <p>Comments: {{commentsAmmount}}</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <p>Last updated at: {{updatedAt}} </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p>Created at: {{createdAt}}</p>
+                </div>
+            </div>
+
+            {{#if commentsAmmount}}
+            <div class="commentsContainer">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Comments</h4>
+                </div>
+              </div>
+            {{/if}}
+            {{#each comments}}
+              <div class="container comment">
+                <div class="row">
+                  <div class="col-12">
+                    <p>{{body}}</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="commentFooter">{{author}}</p>
+                  </div>
+
+                  <div class="col-5">
+                    <p class="commentFooter">{{updatedAt}}</p>
+                  </div>
+
+                  <div class="col-1">
+                    <img src="{{avatarURL}}" alt="" class="commentAvatarImage">
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+            </div>
+
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" value="" id="createCommentIndex{{issueNumber}}" placeholder="Comment">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <input type="submit" class="submitComment" data-issue-index="{{issueNumber}}" value="Submit" name="submit">
+                </div>
+              </div>
+            </form>
+        </div>
+
+        {{/each}}
+    </div>
+    
+</div>

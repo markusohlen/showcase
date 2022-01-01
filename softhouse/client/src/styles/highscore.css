@@ -1,0 +1,22 @@
+/* Highscore CSS */
+.highscore-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 2em;
+}
+
+.highscore-header {
+  padding: 10px;
+}
+
+.highscore-list {
+  list-style-position: inside;
+  padding: 10px;
+}
+
+.highscore-list li span {
+  float: right;
+  color: #aec9e6;
+}

@@ -1,0 +1,28 @@
+/* Card holder CSS */
+.card-holder {
+  border-radius: 10px;
+  height: 15rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.customer-card {
+  position: absolute;
+  right: 55%;
+  top: 27vh;
+  transform: translateX(-55%);
+  background-color: var(--primary-color);
+}
+
+.daily-standup-card {
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 27vh;
+  left: 55%;
+  transform: translateX(55%);
+}
+
+/* Card holder CSS ends */
